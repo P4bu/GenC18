@@ -2,6 +2,9 @@ package genc181802;
 
 import java.util.Scanner;
 
+// Comentarios de linea
+/* Comentarios de Bloques */
+
 public class Main {
 
     public static void main(String[] args) {
