@@ -17,6 +17,11 @@ public class Variables {
         System.out.println("Rango de float: " + Float.MIN_VALUE + " a " + Float.MAX_VALUE);
         System.out.println("Rango de double: " + Double.MIN_VALUE + " a " + Double.MAX_VALUE);
 
+        // Datos de tipo objetos
+        // Integer, Boolean, String, Double
 
+        // Las variables se declaran y se inicializan
+        int declaracion; // declaracion de variable
+        int inicializar = 5; // inicializar una variable
     }
 }
