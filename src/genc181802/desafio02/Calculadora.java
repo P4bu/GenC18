@@ -6,6 +6,7 @@ public class Calculadora {
     // Crear una calculadora que reciba input del usuario
     // Guardar los input en variables
     // Realizar operaciones con las variables
+    // Agregar funciones de clase Math
 
     public static int sumar(int a, int b){
         return a + b;
@@ -43,14 +44,16 @@ public class Calculadora {
         Scanner sc = new Scanner(System.in);
 
         String bloque =
-                        "+---------------------------------------------------+\n" +
-                        "| Imagínate que tienes cero galletas y la repartes  |\n" +
-                        "| entre cero amigos. ¿Cuántas galletas le tocan a   |\n" +
-                        "| cada amigo? No tiene sentido, ¿lo ves? Así que el |\n" +
-                        "| Monstruo de las galletas está triste porque no    |\n" +
-                        "| tiene galletas y tú estás triste porque no tienes |\n" +
-                        "| amigos!.                                           |\n" +
-                        "+---------------------------------------------------+\n";
+                """
+                        +---------------------------------------------------+
+                        | Imagínate que tienes cero galletas y la repartes  |
+                        | entre cero amigos. ¿Cuántas galletas le tocan a   |
+                        | cada amigo? No tiene sentido, ¿lo ves? Así que el |
+                        | Monstruo de las galletas está triste porque no    |
+                        | tiene galletas y tú estás triste porque no tienes |
+                        | amigos!.                                          |
+                        +---------------------------------------------------+
+                """;
 
         int a;
         int b;
