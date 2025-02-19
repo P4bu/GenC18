@@ -27,5 +27,35 @@ public class ContolDeFlujo {
         } else {
             System.out.println("Sin carnet no puedes pasar!");
         }
+
+        // Switch: para muchos posibles escenarios segun algun valor
+        System.out.println("¿Que dia de la semana es? responda con un numero");
+        int numeroSemana = sc.nextInt();
+
+        switch (numeroSemana) {
+            case 1:
+                System.out.println("Lunes");
+                break;
+            case 2:
+                System.out.println("Martes");
+                break;
+            case 3:
+                System.out.println("Miércoles");
+                break;
+            case 4:
+                System.out.println("Jueves");
+                break;
+            case 5:
+                System.out.println("Viernes");
+                break;
+            case 6:
+                System.out.println("Sábado");
+                break;
+            case 7:
+                System.out.println("Domingo");
+                break;
+            default:
+                System.out.println("Número de día inválido");
+        }
     }
 }
