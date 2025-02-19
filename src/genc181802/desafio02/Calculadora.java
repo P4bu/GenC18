@@ -21,6 +21,13 @@ public class Calculadora {
         return (double) a / b;
     }
 
+    public static int max(int a, int b){
+        return Math.max(a, b);
+    }
+    public static double random(){
+        return (int) Math.floor(Math.random() * 10);
+    }
+
     public static int ingresarNumero(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese un numero para la operacion ");
@@ -34,7 +41,9 @@ public class Calculadora {
         System.out.println("2. Restar");
         System.out.println("3. Multiplicar");
         System.out.println("4. Dividir");
-        System.out.println("5. Salir");
+        System.out.println("5. Mayor");
+        System.out.println("6. Random");
+        System.out.println("7. Salir");
 
         //int opcion = sc.nextInt();
         return sc.nextInt();
@@ -93,6 +102,15 @@ public class Calculadora {
                     System.out.println("El resultado es => " + dividir(a, b));
                     break;
                 case 5:
+                    System.out.println("Mayor numero");
+                    a = ingresarNumero();
+                    b = ingresarNumero();
+                    System.out.println("El numero mas grande es => " + max(a, b));
+                    break;
+                case 6:
+                    System.out.println("Tu numero al azar es => " + (int) random());
+                    return;
+                case 7:
                     System.out.println("Adios, gracias por usar esta calculadora!");
                     return;
                 default:
