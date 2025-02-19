@@ -41,6 +41,17 @@ public class Calculadora {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        String bloque =
+                        "+---------------------------------------------------+\n" +
+                        "| Imagínate que tienes cero galletas y la repartes  |\n" +
+                        "| entre cero amigos. ¿Cuántas galletas le tocan a   |\n" +
+                        "| cada amigo? No tiene sentido, ¿lo ves? Así que el |\n" +
+                        "| Monstruo de las galletas está triste porque no    |\n" +
+                        "| tiene galletas y tú estás triste porque no tienes |\n" +
+                        "| amigos.                                           |\n" +
+                        "+---------------------------------------------------+\n";
+
         int a;
         int b;
 
@@ -72,6 +83,7 @@ public class Calculadora {
                     b = ingresarNumero();
                     if (b == 0) {
                         System.out.println("No se puede dividir por 0");
+                        System.out.println(bloque);
                         System.out.println("Ingresa un numero distito de 0");
                         b = ingresarNumero();
                     }
