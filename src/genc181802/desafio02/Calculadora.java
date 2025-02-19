@@ -49,7 +49,7 @@ public class Calculadora {
                         "| cada amigo? No tiene sentido, ¿lo ves? Así que el |\n" +
                         "| Monstruo de las galletas está triste porque no    |\n" +
                         "| tiene galletas y tú estás triste porque no tienes |\n" +
-                        "| amigos.                                           |\n" +
+                        "| amigos!.                                           |\n" +
                         "+---------------------------------------------------+\n";
 
         int a;
