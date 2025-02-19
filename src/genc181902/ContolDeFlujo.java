@@ -21,12 +21,10 @@ public class ContolDeFlujo {
 
             if ((age >= 18)) {
                 System.out.println("Perfecto, " +name+ " puedes pasar!.");
-            }
-            else {
+            } else {
                 System.out.println("Oh oh!, " +name+ " No puedes pasar!.");
             }
-        }
-        else {
+        } else {
             System.out.println("Sin carnet no puedes pasar!");
         }
     }
