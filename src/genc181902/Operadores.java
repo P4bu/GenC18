@@ -47,7 +47,6 @@ public class Operadores {
         boolean menorOIgualQue = x <= y;
         System.out.println("x <= y = " + menorOIgualQue); // true, porque 5 es menor o igual a 10
 
-
         // Operadores de incremento y decremento
         int z = 5;
 

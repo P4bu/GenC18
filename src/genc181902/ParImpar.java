@@ -11,10 +11,16 @@ public class ParImpar {
         int numero = sc.nextInt();
 
         // Validar si el numero divido en 2 su resto es 0 para Par
-        if(numero % 2 == 0) {
-            System.out.println("el numero " + numero + " es par");
-        } else {
-            System.out.println("el numero " + numero + " es impar");
-        }
+        //if(numero % 2 == 0) {
+            //System.out.println("el numero " + numero + " es par");
+        //} else {
+            //System.out.println("el numero " + numero + " es impar");
+        //}
+
+        // Operador ternario
+        String resultado = (numero % 2 == 0) ? "Es par " : " Es impar";
+        System.out.println("resultado = " + resultado);
+
+        sc.close();
     }
 }
