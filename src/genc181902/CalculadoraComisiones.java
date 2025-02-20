@@ -35,7 +35,7 @@ public class CalculadoraComisiones {
                 System.out.print("Las ventas no pueden ser negativas");
             }
         } else {
-            System.out.print("Entrada no válida.");
+            System.out.print("Entrada no válida. Ejecuta otra vez!!");
         }
     }
 }
