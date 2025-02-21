@@ -25,6 +25,9 @@ public class Funciones {
     public double suma(double a, double b) {
         return a + b;
     }
+    public int suma(int a, int b, int c){
+        return a + b + c;
+    }
 
     public static void main(String[] args) {
         // saludo y resta son funciones de la clase static

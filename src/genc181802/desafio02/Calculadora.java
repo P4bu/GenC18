@@ -8,7 +8,7 @@ public class Calculadora {
     // Realizar operaciones con las variables
     // Agregar funciones de clase Math
 
-    public static int sumar(int a, int b){
+    private static int sumar(int a, int b){
         return a + b;
     }
     public static int restar(int a, int b){
@@ -28,9 +28,9 @@ public class Calculadora {
         return (int) Math.floor(Math.random() * 10);
     }
 
-    public static int ingresarNumero(){
+    public static int ingresarNumero(String mensaje){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese un numero para la operacion ");
+        System.out.println(mensaje);
         int numero = sc.nextInt();
         return numero;
     }
@@ -73,50 +73,50 @@ public class Calculadora {
             switch (opcion) {
                 case 1:
                     System.out.println("Sumar");
-                    a = ingresarNumero();
-                    b = ingresarNumero();
+                    a = ingresarNumero("Ingrese el primer numero");
+                    b = ingresarNumero("Ingrese el segundo numero");
                     System.out.println("El resultado es => " + sumar(a, b));
                     break;
                 case 2:
                     System.out.println("Restar");
-                    a = ingresarNumero();
-                    b = ingresarNumero();
+                    a = ingresarNumero("Ingrese el primer numero");
+                    b = ingresarNumero("Ingrese el segundo numero");
                     System.out.println("El resultado es => " + restar(a, b));
                     break;
                 case 3:
                     System.out.println("Multiplicar");
-                    a = ingresarNumero();
-                    b = ingresarNumero();
+                    a = ingresarNumero("Ingrese el primer numero");
+                    b = ingresarNumero("Ingrese el segundo numero");
                     System.out.println("El resultado es => " + multiplicar(a, b));
                     break;
                 case 4:
                     System.out.println("Dividir");
-                    a = ingresarNumero();
-                    b = ingresarNumero();
+                    a = ingresarNumero("Ingrese el primer numero");
+                    b = ingresarNumero("Ingrese el segundo numero");
                     if (b == 0) {
                         System.out.println("No se puede dividir por 0");
                         System.out.println(bloque);
                         System.out.println("Ingresa un numero distito de 0");
-                        b = ingresarNumero();
+                        b = ingresarNumero("Ingrese el segundo numero");
                     }
                     System.out.println("El resultado es => " + dividir(a, b));
                     break;
                 case 5:
                     System.out.println("Mayor numero");
-                    a = ingresarNumero();
-                    b = ingresarNumero();
+                    a = ingresarNumero("Ingrese el primer numero");
+                    b = ingresarNumero("Ingrese el segundo numero");
                     System.out.println("El numero mas grande es => " + max(a, b));
                     break;
                 case 6:
                     System.out.println("Tu numero al azar es => " + (int) random());
-                    return;
+                    break;
                 case 7:
                     System.out.println("Adios, gracias por usar esta calculadora!");
                     return;
                 default:
                     System.out.println("No ingresaste una opcion validad");
                     System.out.println("Adios");
-                    break;
+                    return;
             }
         }
     }
