@@ -7,7 +7,7 @@ public class Palindromo {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese una palabra");
-        String palabra = sc.nextLine();
+        String palabra = (sc.nextLine().toLowerCase());
 
         boolean palindromo = true;
 
