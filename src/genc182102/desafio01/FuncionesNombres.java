@@ -38,13 +38,40 @@ public class FuncionesNombres {
         scanner.nextLine();
 
         do {
-            // Pedir al usuario que ingrese su nombre
-            System.out.print("Ingrese su nombre: ");
-            String nombre = scanner.nextLine();
+            String nombre = "";
+            boolean nombreValido = false;
+            while (!nombreValido) {
+                System.out.print("Ingrese su nombre: ");
+                nombre = scanner.nextLine();
+
+                // Verificamos si el nombre solo tiene letras
+                nombreValido = true;
+                for (int i = 0; i < nombre.length(); i++) {
+                    if (!Character.isLetter(nombre.charAt(i))) {
+                        nombreValido = false;
+                        System.out.println("Error: El nombre solo puede contener letras.");
+                        break;
+                    }
+                }
+            }
 
             // Pedir al usuario que ingrese su apellido
-            System.out.print("Ingrese su apellido: ");
-            String apellido = scanner.nextLine();
+            String apellido = "";
+            boolean apellidoValido = false;
+            while (!apellidoValido) {
+                System.out.print("Ingrese su apellido: ");
+                apellido = scanner.nextLine();
+
+                // Verificamos si el apellido solo tiene letras
+                apellidoValido = true;
+                for (int i = 0; i < apellido.length(); i++) {
+                    if (!Character.isLetter(apellido.charAt(i))) {
+                        apellidoValido = false;
+                        System.out.println("Error: El apellido solo puede contener letras.");
+                        break;
+                    }
+                }
+            }
 
             // Llamadas a las funciones
             printNameLength(nombre);
