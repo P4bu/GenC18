@@ -1,5 +1,6 @@
 package genc182102;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Funciones {
@@ -29,6 +30,12 @@ public class Funciones {
         return a + b + c;
     }
 
+    public static void llamadoMetodosFechas() {
+        //Clase para almacenar fecha, inicializamos con fecha actual
+        LocalDate fecheHoy = LocalDate.now();
+        System.out.println("fecheHoy = " + fecheHoy);
+    }
+
     public static void main(String[] args) {
         // saludo y resta son funciones de la clase static
         saludo();
@@ -39,6 +46,8 @@ public class Funciones {
         Funciones miFuncion = new Funciones();
         //miFuncion.suma(2, 4);
         System.out.println("miFuncion.suma(2, 7) = " + miFuncion.suma(2, 7));
+
+        llamadoMetodosFechas();
 
 
 
