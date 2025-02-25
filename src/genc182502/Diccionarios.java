@@ -30,6 +30,18 @@ public class Diccionarios {
         entrenadorYPokemon.replace("Danileo", "Mewtwo");
         System.out.println(entrenadorYPokemon);
 
+        // Recorrer diccionarios
+        // EntrySet
+        for(Map.Entry<String, String> entrada : entrenadorYPokemon.entrySet()){
+            // Metodo getKey() permite obtener la llave
+            System.out.println("El entrenador en esta ronda es " + entrada.getKey());
+            System.out.println("Su pokemon es " + entrada.getValue());
+        }
+
+        // KeySet
+        for(String clave : entrenadorYPokemon.keySet()) {
+            System.out.println("El entrenado en esta ronda es " + clave + " y su pokemon es " + entrenadorYPokemon.get(clave));
+        }
 
     }
 }
