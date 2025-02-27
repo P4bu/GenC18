@@ -7,17 +7,13 @@ import java.util.List;
 //Definimos una clase, como molde o plano que describe a la persona
 public class Persona {
 
-    //Atributos o características
     String nombre;
-    //int edad;
     LocalDate fechaNacimiento;
     String genero;
     double altura;
     double peso;
     boolean tieneAlgunaDiscapacidad;
-    //Constante en Java
     String rut;
-    //Podemos indicar un atributo como lista o set o map
     List<Persona> listaCompaneros = new ArrayList<>();
 
     //Acciones o métodos
