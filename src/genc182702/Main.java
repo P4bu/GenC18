@@ -5,11 +5,13 @@ import genc182702.model.Cliente;
 import genc182702.model.CuentaAhorro;
 import genc182702.model.CuentaCorriente;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Random random = new Random();
 
         Cliente cliente = null;
         CuentaBancaria cuenta = null;
@@ -31,10 +33,10 @@ public class Main {
                     String nombre = sc.nextLine();
                     System.out.print("Ingrese el RUT del cliente (sin puntos ni guion): ");
                     String rut = sc.nextLine();
-                    System.out.print("Ingrese el ID del cliente: ");
-                    int id = sc.nextInt();
+                    //System.out.print("Ingrese el ID del cliente: ");
+                    int id = random.nextInt(900) + 100;
 
-                    System.out.print("Selecciona tipo de cuenta (1: Ahorros, 2: Corriente): ");
+                    System.out.print("Seleccione un tipo de cuenta (1: Ahorros, 2: Corriente): ");
                     int tipoCuenta = sc.nextInt();
 
                     if (tipoCuenta == 1) {
@@ -90,7 +92,7 @@ public class Main {
                     break;
 
                 case 5:
-                    System.out.println("Saliendo del sistema");
+                    System.out.println("Saliendo del banco \uD83D\uDE80");
                     sc.close();
                     return;
 

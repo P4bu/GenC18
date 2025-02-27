@@ -34,7 +34,7 @@ public class CuentaAhorro implements CuentaBancaria {
 
     @Override
     public void retirar(double monto) {
-        if((saldo > 0) && (monto > 0)) {
+        if((saldo > 0) && (monto <= saldo )) {
             saldo = saldo - monto;
             System.out.println("Tu retiro fue realizado con exito ");
             System.out.println("Nuevo saldo: " + saldo);
