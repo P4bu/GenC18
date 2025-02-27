@@ -41,7 +41,7 @@ public class CuentaCorriente implements CuentaBancaria {
 
     @Override
     public void retirar(double monto) {
-        if((monto > 0) && (saldo - monto >= sobreGiroLimite)){
+        if((monto > 0) && (saldo - monto >= -sobreGiroLimite)){
             saldo = saldo - monto;
             System.out.println("Retiro realizado de cuenta corriente");
             System.out.println("Nuevo saldo: " + saldo);
