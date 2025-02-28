@@ -28,38 +28,41 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    System.out.print("Ingrese el nombre del cliente: ");
-                    sc.nextLine();
-                    String nombre = sc.nextLine();
-                    System.out.print("Ingrese el RUT del cliente (sin puntos ni guion): ");
-                    String rut = sc.nextLine();
-                    //System.out.print("Ingrese el ID del cliente: ");
-                    int id = random.nextInt(900) + 100;
+                    if(cuenta == null) {
+                        System.out.print("Ingrese el nombre del cliente: ");
+                        sc.nextLine();
+                        String nombre = sc.nextLine();
+                        System.out.print("Ingrese el RUT del cliente (sin puntos ni guion): ");
+                        String rut = sc.nextLine();
+                        //System.out.print("Ingrese el ID del cliente: ");
+                        int id = random.nextInt(900) + 100;
 
-                    System.out.print("Seleccione un tipo de cuenta (1: Ahorros, 2: Corriente): ");
-                    int tipoCuenta = sc.nextInt();
+                        System.out.print("Seleccione un tipo de cuenta (1: Ahorros, 2: Corriente): ");
+                        int tipoCuenta = sc.nextInt();
 
-                    if (tipoCuenta == 1) {
-                        System.out.print("Ingrese saldo inicial para Cuenta Ahorros: ");
-                        double saldoAhorro = sc.nextDouble();
+                        if (tipoCuenta == 1) {
+                            System.out.print("Ingrese saldo inicial para Cuenta Ahorros: ");
+                            double saldoAhorro = sc.nextDouble();
 
-                        cuenta = new CuentaAhorro(saldoAhorro);
-                        cliente = new Cliente(id ,nombre, rut, cuenta);
-                        System.out.println("Cuenta de ahorros creada.");
-                    } else if (tipoCuenta == 2) {
-                        System.out.print("Ingrese saldo inicial para Cuenta Corriente: ");
-                        double saldoCorriente = sc.nextDouble();
-                        System.out.print("Ingrese límite de sobregiro: ");
-                        double sobreGiroLimite = sc.nextDouble();
+                            cuenta = new CuentaAhorro(saldoAhorro);
+                            cliente = new Cliente(id ,nombre, rut, cuenta);
+                            System.out.println("Cuenta de ahorros creada.");
+                        } else if (tipoCuenta == 2) {
+                            System.out.print("Ingrese saldo inicial para Cuenta Corriente: ");
+                            double saldoCorriente = sc.nextDouble();
+                            System.out.print("Ingrese límite de sobregiro: ");
+                            double sobreGiroLimite = sc.nextDouble();
 
-                        cuenta = new CuentaCorriente(saldoCorriente, sobreGiroLimite);
-                        cliente = new Cliente(id ,nombre, rut, cuenta);
-                        System.out.println("Cuenta corriente creada.");
+                            cuenta = new CuentaCorriente(saldoCorriente, sobreGiroLimite);
+                            cliente = new Cliente(id ,nombre, rut, cuenta);
+                            System.out.println("Cuenta corriente creada.");
+                        } else {
+                            System.out.println("Opción inválida.");
+                        }
+                        break;
                     } else {
-                        System.out.println("Opción inválida.");
+                        System.out.println("Ya tienes una cuenta en el banco");
                     }
-                    break;
-
                 case 2:
                     if (cliente != null) {
                         System.out.println("Cliente: " + cliente.getNombre());
