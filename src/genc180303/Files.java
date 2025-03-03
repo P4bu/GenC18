@@ -1,18 +1,16 @@
 package genc180303;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class Files {
     //A traves de esta clase podemos interactuar con nuestro sistema de archivos
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         crearCarpeta("nuevaCarpeta");
         crearArchivo("nuevoArchivo.txt");
         escribirArchivo("src/genc180303/archivo.txt", "Hola estamos escribiendo el archivo");
         leerArchivo("src/genc180303/archivo.txt");
+        eliminarArchivo("src/genc180303/archivoBorrar.txt");
     }
 
     public static void crearCarpeta(String nombreCarpeta) {
@@ -63,6 +61,17 @@ public class Files {
             }
         } catch (IOException e) {
             System.out.println(e);
+        }
+    }
+
+    public static void eliminarArchivo(String ruta) throws IOException{
+        File nuevoArchivo = new File(ruta + "archivoBorrar.txt");
+        nuevoArchivo.createNewFile();
+        if(nuevoArchivo.exists()){
+            nuevoArchivo.delete();
+            System.out.println("El archivo " + nuevoArchivo.getName() + "a sido borrado");
+        } else {
+            System.out.println("Accion invalida");
         }
     }
 
