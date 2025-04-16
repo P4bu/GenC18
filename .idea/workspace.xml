@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5267cd35-2c82-495b-bdd2-dcbf71166eda" name="Changes" comment="" />
+    <list default="true" id="5267cd35-2c82-495b-bdd2-dcbf71166eda" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ejercicios/ejerciciosEntrevistas/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicios/ejerciciosEntrevistas/FizzBuzz.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,11 +34,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Fibonacci.executor": "Run",
+    "Application.FizzBuzz.executor": "Run",
     "Application.NumeroPrimos.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "classGen",
-    "last_opened_file_path": "/Users/pubu/Documents/Generation/actividades/GenJavaC18/JavaBasicC18",
+    "last_opened_file_path": "/Users/pubu/Documents/Generation/actividades/GenC18/src/ejercicios",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -44,6 +48,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ejercicios" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="NumeroPrimos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ejercicios.NumeroPrimos" />
@@ -82,6 +91,7 @@
       <updated>1744075249569</updated>
       <workItem from="1744075251303" duration="2252000" />
       <workItem from="1744170318723" duration="357000" />
+      <workItem from="1744826906144" duration="732000" />
     </task>
     <servers />
   </component>
